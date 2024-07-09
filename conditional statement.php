@@ -1,4 +1,7 @@
 <?php
+
+// if=elseif-else statement
+
 $a = 20;
 if ($a < 30) {
     echo "\$a is less than 30";
@@ -41,4 +44,32 @@ if ($country == "Bharat") {
     echo "welcome to india";
 } elseif ($country == "India") {
     echo "Greeting from India";
+}
+
+echo "<br>";
+echo "<br>";
+
+// switch-case statement
+
+$country = "indin"; // we can try with canada, france, morocco, brazil
+
+switch($country){
+    case "india":
+        echo "india is in asian continent.";
+        break;
+    case "canada":
+        echo "cananda is in north american continent.";
+        break;
+    case "brazil":
+        echo "brazil is in south american continent.";
+        break;
+    case "france":
+        echo "france is in europian continent.";
+        break;
+    case "morocco":
+        echo "morocco is in african continent.";
+        break;
+    default:
+        echo "I Don't know where it is";
+        break;
 }
