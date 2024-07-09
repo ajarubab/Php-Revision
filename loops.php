@@ -17,6 +17,14 @@ for($i = 1; $i <= 10 ; $i++){
     echo 5*$i." ";
 }
 
+// generating 10 random numbers
+echo "<br>";
+echo "<br>";
+
+for($i = 1; $i <= 10 ; $i++){
+    echo rand(0,100)." ";
+}
+
 echo "<br>";
 echo "<br>";
 
