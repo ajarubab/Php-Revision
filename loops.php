@@ -50,4 +50,34 @@ do{
 }while($b<11);
 
 
+echo "<br>";
+echo "<br>";
+
+// for-each loop
+
+    $arr = [28,56.76,null,12,23,"ram",34,45,56,7,78,'krishna',89,90,true];
+
+    foreach($arr as $i){
+        if($i==23){
+            continue;
+        }
+        echo $i."<br>";
+        if($i== 'krishna'){
+            break;
+        }
+    }
+
+    echo "<br>";
+    echo "<br>";
+
+    
+    $arr2 = [];
+    for($i=0; $i<= rand(5,15); $i++)
+    {
+        $arr2[$i] = rand(10,99);
+    }
+    echo "There are ".count($arr2)." elemnet now in the arr2.<br>";
+    foreach($arr2 as $i):
+        echo "number is : ".$i."<br>";
+    endforeach;
 ?>
