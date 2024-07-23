@@ -3,6 +3,8 @@
 
     echo "<br><hr><br>";
 
+    // if movr_uploaded_file results permission error run the following commands in terminal
+    // sudo chmod -R 0777 /Applications/XAMPP/xamppfiles/htdocs/Php-Revision/PHP_Forms/uploads
     echo "<pre>";
     if($_FILES["fileUpload"]){
         $data = $_FILES["fileUpload"]["name"];
