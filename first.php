@@ -18,4 +18,14 @@
     print("<br>this is print function of php with br line break html tag");
     print("<h3>this is print function of php in h3 size</h3>");
     print("<h4 style='text-decoration: underline 5px red;'>this is print function of php in h4 size with some css</h4>");
+
+
+    if($_SESSION){
+        echo "The Session is Still running.<br>";
+        echo "<br>This is ".$_SESSION["Username"]." from ".$_SESSION["Country"].".<br>";
+    } else {
+        echo "<Br>No Session is Active.";
+    }
+
+
 ?>
