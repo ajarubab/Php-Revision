@@ -1,4 +1,5 @@
 <?php
+/*
     // craetion of a basic function and calling that basic function
 
     // defining basic function
@@ -75,7 +76,8 @@
     showColors('Sky',"blue");
     showColors('Grass',"green");
 
-
+*/
+/*
     echo "<hr>";
     //------------------------------------------------------------------
 
@@ -104,6 +106,7 @@
      * ... inner it will not give error but Result will be blank.
     */
 
+/*
     // outerFun();         // can be callable even not defined earlier
     function outerFun(){
         echo "This is outer function.<br>";
@@ -171,9 +174,10 @@
     // $vidalTestResult = true;
     $vidalTestResult = "Positive";
     var_dump($vidalTestResult);
-    
     echo "<br>------------------<br>";
 
+    date_default_timezone_set("Asia/Kolkata");  // sets indian Timezone
+    echo date("D M Y");
     echo "<br>The Date of today is <b>".date("d")."</b><br>";
     echo "Date of Today is <b>".date("j")."</b><br>";
     echo "Short form of this month is <b>".date("M")."</b><br>";
@@ -183,12 +187,13 @@
     echo "Today is <b>".date("l")."</b><br>";
     echo "Year of Today is <b>".date("Y")."</b><br>";
     echo "Short-Year of Today is <b>".date("y")."</b><br>";
-    echo "Time is <b>".date("H:i:s")."</b><br>";        // time but don't know of where
+    echo "Current Time in 12 Hour format is  <b>".date("h:i:s A")."</b><br>";        // time but don't know of where
+    echo "Current Time in 24 Hour format is  <b>".date("H:i:s")."</b><br>";        // time but don't know of where
     echo "Date is <b>".date("j-m-y")."</b><br>";
     echo date('\I\t \i\s \t\h\e jS \o\f F Y \.')."<br>";
 
     echo "<br>------------------<br>";
-
+/*
     // echo phpinfo();
 
     echo "<br>------------------<br>";
@@ -230,5 +235,5 @@
     echo "Bhajan me hare shabd ".substr_count($bhajan,"hare")." baar aaya hai.";  // finds the occurance of hare into the bhajan.
 
     echo "<br>------------------<br>";
-
+*/
 ?>
