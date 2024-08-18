@@ -1,7 +1,11 @@
 <?php
+
+    // using Inbuit Function
+    $arr = [1,2,3,4,5,6,5,4,2,8,9,3,5,7,9,3,2,6,9,0,1,2,4,2,5,7,9];
+    print_r(array_unique($arr));
 /*
 
-// ---------------------- Method 1 : USING SOME OF PHP INBUILT FUNCTIONS ----------------------
+echo "---------------------- Method 1 : USING SOME OF PHP INBUILT FUNCTIONS ----------------------";
 
 // Function to generate an array of N random numbers
 function generateRandomNumbers($count) {
@@ -119,7 +123,7 @@ function findDuplicatesWithFrequency($numbers) {
 
     return [$unique, $duplicates];
 }
-*/
+
 
 // ---------------------- Method 4 : WITHOUT USING FOREACH LOOP (SECOND METHOD) ----------------------
 
@@ -199,3 +203,5 @@ echo "Duplicates with frequencies: <br>";
 foreach ($duplicates as $uq => $tm) {
     echo "<br>" . "$uq" . " : " . "$tm times";
 }
+
+*/
