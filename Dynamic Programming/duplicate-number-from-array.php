@@ -3,6 +3,8 @@
     // using Inbuit Function
     $arr = [1,2,3,4,5,6,5,4,2,8,9,3,5,7,9,3,2,6,9,0,1,2,4,2,5,7,9];
     print_r(array_unique($arr));
+    echo "<br><hr><br> the frequency of each digits is : <br> ";
+    print_r(array_count_values($arr));
 /*
 
 echo "---------------------- Method 1 : USING SOME OF PHP INBUILT FUNCTIONS ----------------------";
