@@ -367,6 +367,7 @@ print_r($userDefCommKeyVal2);
 echo "<hr>";
 
 */
+/*
 
 $b1 = ["a" => "red","b" => "green", "c" => "blue", "d" => "yellow"];
 $b2 = ["a" => "red","p" => "yellow", "m" => "black", "b" => "pink"];
@@ -447,6 +448,523 @@ echo "<pre>";
 print_r($diffKeyVal3);
 echo "<hr>";
 
+*/
+
+/*
+$assocArr = array(
+    "Name" => "Rajat",
+    "Class" => 12,
+    "Age" => 18,
+    "Section" => "B",
+    "Batch" => "2013",
+    "Rank" => 2013
+);
+
+$onlyVal = array_values($assocArr);
+echo "<pre>";
+print_r($onlyVal);
+
+$dupData = [1,2,1,3,4,1,5,6,1,3,7,8,4,6,8,3,9,5,4,0,5];
+
+$uniData = array_unique($assocArr);
+$uniData2 = array_unique($dupData);
+echo "<pre>";
+print_r($uniData);
+echo "<pre>";
+print_r($uniData2);
+
+*/
+/*
+$multiAssocArr = array(
+    array(
+        "Name" => "Rajat",
+        "Class" => 12,
+        "Age" => 18,
+        "Section" => "B",
+        "Batch" => "2013",
+        "Rank" => 2013
+    ),
+    array(
+        "Name" => "Raju",
+        "Class" => 12,
+        "Age" => 17,
+        "Section" => "C",
+        "Batch" => "2012",
+        "Rank" => 12013
+    ),
+    array(
+        "Name" => "Rajan",
+        "Class" => 12,
+        "Age" => 19,
+        "Section" => "B",
+        "Batch" => "2015",
+        "Rank" => 11013
+    ),
+    array(
+        "Name" => "Rajesh",
+        "Class" => 12,
+        "Age" => 20,
+        "Section" => "A",
+        "Batch" => "2014",
+        "Rank" => 20013
+    )
+);
+
+$namesOnlyAssocArray = array_column($multiAssocArr,"Name");
+$batchNameAssocArray = array_column($multiAssocArr,"Name","Batch");
+
+echo "<pre>";
+print_r($namesOnlyAssocArray);
+
+echo "<pre>";
+print_r($batchNameAssocArray);
+
+$bhojan = array("roti","sabji","daal","chaval","saag","meat","machhli","anda","doodh","dahi","paneer","daal","meat","55");
+$bhojanGroup = array_chunk($bhojan,rand(1,4));
+$assocGroup = array_chunk($multiAssocArr,rand(1,4));
+
+echo "<pre>";
+print_r($bhojanGroup);
+
+echo "<pre>";
+print_r($assocGroup);
+*/
+
+/*
+$myEmpData = array(
+    "Name" => "rajat thakur",
+    "City" => "Delhi",
+    "Post"  => "SDE 2",
+    "Section" => "A",
+    "Batch" => "2014",
+);
+
+$swapKeyVal = array_flip($myEmpData);
+echo "<pre>";
+print_r($swapKeyVal);
+
+$chngKeyCase = array_change_key_case($myEmpData);
+echo "<pre>";
+print_r($chngKeyCase);
+$chngKeyCase = array_change_key_case($myEmpData, CASE_UPPER);
+echo "<pre>";
+print_r($chngKeyCase);
+$chngKeyCase = array_change_key_case($myEmpData, CASE_LOWER);
+echo "<pre>";
+print_r($chngKeyCase);
+*/
+
+/*
+$randomDigits = [1,0.2,1,3,4,1.7,5,6,1,3.25,7,8,4,6,8,3,9.67,5,4,5];
+$randomAssocDigits = ["a"=>12.23,"b"=>23.34,"c"=>25];
+
+$sumOfRandomDigits = array_sum($randomDigits);
+$sumOfRandomAssocVals = array_sum($randomAssocDigits);
+echo "<br><hr><br>";
+echo "The sum of index array elements are : ".$sumOfRandomDigits;
+echo "<br><hr><br>";
+echo "The sum of associative array values are : ".$sumOfRandomAssocVals;
+echo "<br><hr><br>";
+
+$productOfRandomDigits = array_product($randomDigits);
+$productOfRandomAssocVals = array_product($randomAssocDigits);
+echo "The product of array elements are : ".$productOfRandomDigits;
+echo "<br><hr><br>";
+echo "The sum of associative array values are : ".$productOfRandomAssocVals;
+echo "<br><hr><br>";
+
+$singleRandomElement = array_rand($randomDigits);
+$multipleRandomElement = array_rand($randomDigits, 3);
+
+$singleRandomKey = array_rand($randomAssocDigits);
+$multipleRandomKey = array_rand($randomAssocDigits, 2);
+
+echo "<pre>";
+echo $singleRandomElement;
+echo "</pre>";
+
+echo "<br><hr><br>";
+echo "<pre>";
+print_r($multipleRandomElement);
+echo "</pre>";
+
+echo "<br><hr><br>";
+
+echo "<pre>";
+print_r($singleRandomKey);
+echo "</pre>";
+
+echo "<br><hr><br>";
+echo "<pre>";
+print_r($multipleRandomKey);
+echo "</pre>";
+
+echo "<br><hr><br>";
 
 
+$bhojanArray = array("roti","sabji","daal","chaval","saag","meat","machhli","anda","doodh","dahi","paneer");
 
+echo "<br>Before Suffling  Bhojan Array Elements<br>";
+echo "<pre>";
+foreach($bhojanArray as $item){
+    echo $item."<br>";
+}
+echo "</pre>";
+shuffle($bhojanArray);
+
+echo "<br><hr>";
+echo "<br>After Suffling Bhojan Array Elements<br>";
+echo "<pre>";
+foreach($bhojanArray as $item){
+    echo $item."<br>";
+}
+echo "</pre>";
+
+echo "<br><hr>";
+
+$singleRandomBhojanIndex = array_rand($bhojanArray);
+$multipleRandomBhojan = array_rand($bhojanArray, 3);
+
+echo "<pre>";
+echo $bhojanArray[$singleRandomBhojanIndex];
+echo "</pre>";
+
+echo "<hr>";
+echo "<pre>";
+foreach($multipleRandomBhojan as $item){
+    echo $bhojanArray[$item]."<br>";
+}
+echo "</pre>";
+
+*/
+
+/*
+
+$a4 = ["CS","IT","Mech","Civil","Ins"];
+
+$reveredBranch = array_fill_keys($a4,"Branch");
+
+echo "<pre>";
+print_r($reveredBranch);
+
+$a5 = array_fill(1,10,"Jai Siyaram");
+$a6 = array_fill(5,5,"Jai Shree Radhe");
+$a7 = array_fill(-2,6,"Jai Shree Krishna");
+
+echo "<pre>";
+print_r($a5);
+
+echo "<pre>";
+print_r($a6);
+
+echo "<pre>";
+print_r($a7);
+*/
+
+/*
+
+$empDataMore = array(
+    "Name" => "rajat thakur",
+    "City" => "Delhi",
+    "Post"  => "SDE 2",
+    "Section" => "A",
+    "Batch" => "2014",
+);
+$myAssocArr = array(
+    "A" => "Apple",
+    "B" => "Ball",
+    "C" => "Cat",
+    "D" => "Dog",
+);
+
+array_walk($myAssocArr, "show", "For");
+
+function show($v, $k, $p){
+    echo "$k $p $v<br>";
+}
+
+echo "<br><hr><br>";
+$myArr = array($empDataMore,$myAssocArr);
+
+array_walk_recursive($myArr,"show","is");
+
+echo "<hr>";
+
+$newIndexArr = [];
+$newIndexArrSize = rand(5,11);
+
+for($i=0;$i<$newIndexArrSize;$i++){
+    $newIndexArr[$i] = rand(1,10);
+}
+
+echo "<pre>";
+print_r($newIndexArr);
+
+function mapping($n){
+    return $n * $n;
+}
+
+$newMappedArr = array_map("mapping", $newIndexArr);
+echo "<pre>";
+print_r($newMappedArr);
+
+function combining($a,$b){
+    return "Square of $a is $b<br>";
+    // return [$a => $b];
+}
+// $actualArray = array_map("combining",$newIndexArr, $newMappedArr);
+$actualArray = array_map(null,$newIndexArr, $newMappedArr);
+echo "<pre>";
+print_r($actualArray);
+
+
+function upperCaseValue($val){
+    return strtoupper($val);
+}
+$actualAssocArray = array_map("upperCaseValue",$myAssocArr);
+echo "<pre>";
+print_r($actualAssocArray);
+
+*/
+
+/*
+$route = ["Delhi","Lucknow","Prayagraj","Siwan","Chhapara","Patna"];
+$myNums = [1,2,3,4,5,6];
+
+$tripRoute = array_reduce($route,"myfunc","Route");
+$multiPlicationOfNums = array_reduce($myNums,"multiOfNums",1);
+
+function myfunc($ini,$place){
+    return "$ini - $place";
+}
+
+function multiOfNums($in,$num){
+    $in *= $num;
+    return $in;
+}
+
+echo "<pre>";
+print_r($tripRoute);
+
+echo "<pre>";
+echo "The multiplication result of array elements is : $multiPlicationOfNums";
+
+*/
+/*
+$pkArr = ["Peeku","Neha","Karishma","Pooja","Soniya","Manvi"];
+$exArr = ["d" => "Neha","e" => "Pooja","a" => "Karishma","c" => "Peeku","b" => "sonam"];
+
+
+$newIndexArr = [];
+$newIndexArrSize = rand(5,8);
+
+for($i=0;$i<$newIndexArrSize;$i++){
+    $newIndexArr[$i] = rand(1,10);
+}
+
+echo "<br>Before<br>";
+echo "<pre>";
+print_r($newIndexArr);
+echo "<pre>";
+print_r($exArr);
+
+// sort($pkArr);
+// sort($newIndexArr);
+// sort($exArr);
+// echo "<br>After sort<br>";
+// echo "<pre>";
+// print_r($newIndexArr);
+// print_r($exArr);
+
+// rsort($pkArr);
+// rsort($newIndexArr);
+// rsort($exArr);
+// echo "<br>After reverse sort<br>";
+// echo "<pre>";
+// print_r($newIndexArr);
+// print_r($exArr);
+
+// asort($exArr);                          // value's character based sorting of associative array
+// echo "<br>After associative sort<br>";
+// echo "<pre>";
+// print_r($exArr);
+
+// arsort($exArr);                             // value's character based reverse sorting of associative array
+// echo "<br>After associative reverse sort<br>";
+// echo "<pre>";
+// print_r($exArr);
+
+// ksort($exArr);      // key based sorting of associative aaray
+// echo "<br>After associative key sort<br>";
+// echo "<pre>";
+// print_r($exArr);
+
+krsort($exArr);         // key based reverse sorting of associative aaray
+echo "<br>After associative key reverse sort<br>";
+echo "<pre>";
+print_r($exArr);
+*/
+/*
+$imgArr = ["img22.png","img13.jpeg","Img07.png","img11.jpg","img18.png"];
+
+echo "<br>Before sort<br>";
+echo "<pre>";
+print_r($imgArr);
+
+$reversed_array = array_reverse($imgArr);       // Reverses the Element names to present index of the actual array
+echo "<br>After array reverse sort<br>";
+echo "<pre>";
+print_r($reversed_array);
+
+sort($imgArr);              // shorts the element based on the ASCII value of the Characters of elements
+echo "<br>After sort<br>";
+echo "<pre>";
+print_r($imgArr);
+
+natcasesort($imgArr);       // Also shorts the element based on the ASCII value of the Characters
+echo "<br>After natural sort<br>";
+echo "<pre>";
+print_r($imgArr);
+
+
+$fruits = ["guava","cherry","coconut"];
+$veggies = ["tomato","chili","potato"];
+
+array_multisort($fruits,$veggies);  // works if argument array contains same no. of elemnts
+
+echo "<hr>";
+echo "<pre>";
+print_r($fruits);
+echo "<pre>";
+print_r($veggies);      // some irregularities here, sorts the second array according to the first array sorting index hence not reliable
+*/
+
+/*
+$places = ["Delhi","Lucknow","Prayagraj","Siwan","Chhapara","Patna"];
+
+echo "Current key : ".key($places)." || Current value : ".current($places)." || Current position value : ".pos($places)."<br>";
+next($places);
+echo "Current key : ".key($places)." || Current value : ".current($places)." || Current position value : ".pos($places)."<br>";
+next($places);
+echo "Current key : ".key($places)." || Current value : ".current($places)." || Current position value : ".pos($places)."<br>";
+end($places);
+echo "Current key : ".key($places)." || Current value : ".current($places)." || Current position value : ".pos($places)."<br>";
+prev($places);
+echo "Current key : ".key($places)." || Current value : ".current($places)." || Current position value : ".pos($places)."<br>";
+reset($places);
+echo "Current key : ".key($places)." || Current value : ".current($places)." || Current position value : ".pos($places)."<br>";
+
+
+$abcd = array(11,22,33,44);
+list($first,,$third,$fourth) = $abcd;    // aasigns respective index value to respective no. of argument names
+
+echo "<br><hr><br>";
+
+echo "value of fourth value : $fourth"."<br>"; 
+// echo "value of second value : $second"."<br>"; 
+echo "value of first value : $first"."<br>"; 
+echo "value of third value : $third"."<br>"; 
+
+
+$empDetail = array(
+    0 => "Rajat thakur",
+    1 => "Delhi",
+    2  => "SDE 2",
+    3 => "A",
+    4 => "2014",
+);
+
+list($Name,$City,$Post,$Section,$Batch) = $empDetail;   // works only with numeric keys of associative array
+
+echo "<br><hr><br>";
+
+echo "The City of the Employee is : ". $City. "<br>";
+echo "The Section of the Employee is : ". $Section. "<br>";
+echo "The Batch of the Employee is : ". $Batch. "<br>";
+echo "The Name of the Employee is : ". $Name. "<br>";
+echo "The Post of the Employee is : ". $Post. "<br>";
+
+list($a[1],$a[4],$a[3],$a[2],$a[0]) = $empDetail;   // storing the selected elements for selected index values and making new array
+echo "<br><hr><br>";
+
+echo "<pre>";
+print_r($a);
+// echo "<br><hr><br>";
+// foreach($a as $item){
+//     echo $item."<br>";
+// }
+
+*/
+
+
+$A = "Avacado";
+$myAssociativeArr = array(
+    "A" => "Apple",
+    "B" => "Ball",
+    "C" => "Cat",
+    "D" => "Dog",
+);
+
+// extract($myAssociativeArr);
+// echo "The value of A is : $A <br>";
+// echo "The value of C is : $C <br>";
+// echo "The value of D is : $D <br>";
+// echo "The value of B is : $B <br>";
+
+// extract($myAssociativeArr,EXTR_SKIP);
+// echo "The value of A is : $A <br>";
+// echo "The value of C is : $C <br>";
+// echo "The value of D is : $D <br>";
+// echo "The value of B is : $B <br>";
+
+// extract($myAssociativeArr,EXTR_PREFIX_SAME,"fal");
+// echo "The value of A is : $A <br>";
+// echo "The value of B is : $B <br>";
+// echo "The value of D is : $D <br>";
+// echo "The value of C is : $C <br>";
+// echo "The value of fal_A is : $fal_A <br>";
+
+extract($myAssociativeArr,EXTR_PREFIX_ALL,"fal");
+echo "The value of A is : $A <br>";
+// echo "The value of B is : $B <br>";
+// echo "The value of D is : $D <br>";
+// echo "The value of C is : $C <br>";
+echo "The value of fal_A is : $fal_A <br>";
+echo "The value of fal_B is : $fal_B <br>";
+echo "The value of fal_D is : $fal_D <br>";
+echo "The value of fal_C is : $fal_C <br>";
+
+echo "<br><hr><br>";
+
+
+$a1 = "First Apple";
+$a2 = "Second Apple";
+$a3 = "Third Apple";
+$a4 = "Fourth Apple";
+$a5 = "Fifth Apple";
+
+$newAlpArr = compact("a3","a1","a2");      // changes vaiablename into key and values to value to return new associative array
+
+echo "<pre>";
+print_r($newAlpArr);
+
+
+$extra = ["a4","a5"];
+$newAlpArr = compact("a2","a1","a3",$extra);      // changes vaiablename into key and values to value to return new associative array
+echo "<br><hr><br>";
+echo "<pre>";
+print_r($newAlpArr);
+
+echo "<br><hr><br>";
+// print_r(range(5,10));     // return an array having element value from 0 to 10
+// print_r(range("A","K"));     // return an array having element value from A to K
+// print_r(range("A","K",2));     // return an array having element value from A to K having common difference of 2
+// print_r(range("A","m",3));     // return an array having element value from A to m
+// print_r(range("a","M"));     // return an array having element value from a to M , SO it can traverse and print reverse ASCII value also
+// print_r(range("a","A",4));     // return an array having element value from a to A , SO it can traverse and print reverse ASCII value also
+// print_r(range(0,10,2));     // return an array having element value from 0 to 10 having common difference of 2
+// print_r(range(10,100,13));  // return an array having element value from 10 to 100 having common difference of 13
+
+foreach(range(0, rand(0,99),5) as $ele){
+    echo "$ele<br>";
+}
