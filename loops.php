@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 // while loop
 
@@ -80,4 +80,38 @@ echo "<br>";
     foreach($arr2 as $i):
         echo "number is : ".$i."<br>";
     endforeach;
+?> -->
+
+<?php
+
+// revision on 05/03/2025
+
+$a = 100;
+while($a>=1){
+    print("$a ");
+    $a--;
+}
+echo "<br><br>";
+
+for($b=1;$b<=100;$b+=3){
+    print("$b ");
+}
+
+echo "<br><br>";
+$c = 1;
+do{
+    print(($c*5)." ");
+    $c+=3;
+}while($c<=50);
+
+echo "<br><br>";
+// print(rand(5,15));
+
+$arr = [];
+for($i=1;$i<=rand(10,50);$i++){
+    $arr[$i] = rand(10,99);
+}
+foreach($arr as $x){
+    print("$x ");
+}
 ?>
