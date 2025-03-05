@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     $a = 12;
     $b = 4;
     $c = 5;
@@ -311,4 +311,89 @@
         echo " xor condtion not met.";
     }
 
+?> -->
+
+<?php
+
+// 05/03/2025 revision
+
+$a = 60;
+$b = 12;
+
+print(" Addition : $a + $b = ".($a+$b));
+print("<br> Substraction : $a - $b = ".($a-$b));
+print("<br> Multiplication : $a * $b = ".($a*$b));
+print("<br> Division : $a / $b = ".($a/$b));
+print("<br> 2 raised to powers 8 = ".(2**8));
+print("<br> 55 % 4 gives remainder : ".(55%4));
+
+print("<br><br><br> \$a initial value : $a");
+print("<br> \$b initial value : $b");
+print("<br><br><br> \$b value after \$b =\ $a ($b = $a) : ".($b=$a));
+print("<br> \$a value after \$a += \$b: ($a += $b) : ".($a+=$b));
+print("<br> \$b value after \$b *= \$a ($b *= $a) : ".($b*=$a));
+print("<br> \$b value after \$b -= \$a ($b -= $a) : ".($b-=$a));
+print("<br> \$b value after \$b /= \$a: ($b /= $a) : ".($b/=$a));
+print("<br> \$a value after \$a *= \$b ($a *= $b) : ".($a*=$b));
+print("<br> \$a value after \$a %= \$b ($a -= $b) : ".($a-=$b));
+print("<br> \$a value after \$a %= \$b [$a %= ($a - $b)] : ".($a%=($a-$b)));
+print("<br> \$b value after \$b += \$a: ($b += $a) : ".($b+=$a));
+
+echo "<br><br>";
+print("\$a = $a and \$b = $b");
+
+echo "<br> \$a == \$b  ($a == $b) will results : ";
+var_dump( $a == $b );
+
+echo "<br> \$a != \$b ($a != $b)  will results : ";
+var_dump( $a != $b );
+
+echo "<br> \$a < \$b ($a < $b) will results : ";
+var_dump( $a < $b );
+
+echo "<br> \$a > \$b ($a > $b) will results : ";
+var_dump( $a > $b );
+
+echo "<br> \$a >= \$b ($a >= $b) will results : ";
+var_dump( $a >= $b );
+
+echo "<br> \$a <= \$b ($a <= $b) will results : ";
+var_dump( $a <= $b );
+
+echo "<br> \$a <> \$b ($a <> $b) will results : ";
+var_dump( $a <> $b );
+
+//The spaceship operator (<=>) in PHP is used for three-way comparison. 
+
+// It compares two values and returns:
+// -1 if the left operand is less than the right operand.
+// 0 if both operands are equal.
+// 1 if the left operand is greater than the right operand.
+
+
+echo "<br> \$a <=> \$b ($a <=> $b) will results : ";
+var_dump( $a <=> $b );
+
+echo "<br> \$b <=> \$a ($b <=> $a) will results : ";
+var_dump( $b <=> $a );
+
+echo "<br><br>";
+print("Initally \$a = $a and \$b = $b");
+
+print("<br><br>First pre-increment ++\$a and then ".++$a." then value of $a");
+print("<br>First post-increment \$b++ and then ".$b++." then value of $b");
+print("<br><br>Right Now values : \$a = $a and \$b = $b");
+print("<br><br>First pre-decrement --\$a and then ".--$a." then value of $a");
+print("<br>First post-decrement \$b-- and then ".$b--." then value of $b");
+
+    $firstName = 'Raja ';
+    $middleName = 'Kumar ';
+    $lastName = 'Prasad';
+
+    echo "<br>Full Name : ";
+    print($firstName.$middleName.$lastName);
+
+    echo "<br>Full Name : $firstName $middleName $lastName";
+    echo "<br>Full Name : "."$firstName". "$middleName". "$lastName";
+    print("<br>Full Name = $firstName $middleName $lastName");
 ?>
