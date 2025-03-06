@@ -1,6 +1,6 @@
 <?php
-    const name = "Raja kumar prasad";   // way 1 of contant declaration
-    define("NAME","Shree Ram");         // way 2 of contant declaration
+    const name = "Raja kumar prasad";   // way 1 of constant declaration
+    define("NAME","Shree Ram");         // way 2 of constant declaration
     
     // we can't use both way for same contant
     // we cant use either of ways on double same-same declaration

@@ -1,5 +1,5 @@
 <?php
-/*
+
     // craetion of a basic function and calling that basic function
 
     // defining basic function
@@ -76,8 +76,7 @@
     showColors('Sky',"blue");
     showColors('Grass',"green");
 
-*/
-/*
+
     echo "<hr>";
     //------------------------------------------------------------------
 
@@ -106,7 +105,7 @@
      * ... inner it will not give error but Result will be blank.
     */
 
-/*
+
     // outerFun();         // can be callable even not defined earlier
     function outerFun(){
         echo "This is outer function.<br>";
@@ -118,7 +117,7 @@
         innerFun();     // now it is callable bcs already defined and outer is called
     }
 
-    // coorect
+    // correct
     
     
     outerFun();
@@ -166,14 +165,14 @@
 
     // Basic inbuilt functions of php
 
-    $bhajan = "Hare raam hare raam, raam raam hare hare, hare krishna hare krishna, krishna krishna hare hare";
-    echo "The bhajan is ".strlen($bhajan)." characters long.";
+    // $bhajan = "Hare raam hare raam, raam raam hare hare, hare krishna hare krishna, krishna krishna hare hare";
+    // echo "The bhajan is ".strlen($bhajan)." characters long.";
 
-    echo "<br>------------------<br>";
+    // echo "<br>------------------<br>";
 
     // $vidalTestResult = true;
-    $vidalTestResult = "Positive";
-    var_dump($vidalTestResult);
+    // $vidalTestResult = "Positive";
+    // var_dump($vidalTestResult);
     
 /*
     // echo phpinfo();

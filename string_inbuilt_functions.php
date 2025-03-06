@@ -1,13 +1,13 @@
 <?php
 
-/*
+
 $message = "Hello guys how are you doing";
 
-$myMsgArr = explode(" ", $message);
+$myMsgArr = explode(" ", $message);     // breaks the string-sentence into string-word array based on the given separators
 echo "<pre>";
 print_r($myMsgArr);
 
-$myMsgArr = explode(" ", $message, 3);
+$myMsgArr = explode(" ", $message, 3);  // breaks the string-sentence into string-word array based on the given separators in overall 3 parts having one word each till last and all rest words in last element data
 echo "<pre>";
 print_r($myMsgArr);
 
@@ -27,7 +27,7 @@ $myMsg = array(
     "doing"
 );
 
-$myMsgString = implode(" -- ",$myMsg);
+$myMsgString = implode(" -- ",$myMsg);  // joins the all array string-elements and make a sentence of string type having given separator between each word
 echo $myMsgString;
 
 echo "<br><hr><br>";
@@ -36,45 +36,43 @@ $myMsgString = implode("<br>",$myMsg);
 echo $myMsgString;
 echo "<br><hr><br>";
 
-$myMsgString = join(" - ",$myMsg);
+$myMsgString = join(" - ",$myMsg);  // joins the all array string-elements and make a sentence of string type having given separator between each word
 echo $myMsgString;
 echo "<br><hr><br>";
 
 $myStr = "Jai Shree Ram";
 
 echo "<pre>";
-print_r(str_split($myStr));
+print_r(str_split($myStr));     // splits all characters of string and save them as array elements
 
 echo "<pre>";
-print_r(str_split($myStr,2));
+print_r(str_split($myStr,2));   // splits all characters of string as a group of 2 characters including whitespaces and save them as array elements
 
 echo "<pre>";
-print_r(chunk_split($myStr,2," / "));
+print_r(chunk_split($myStr,2," / "));   // splits the string in the chunk of 2 characters including whitespaces put the given separator between them
 echo "<br>";
 print_r(chunk_split($myStr,4," - "));
 
 echo "<br><hr><br>";
-*/
-/*
 $myStr = "Jai shree RAM";
 
-echo strtolower($myStr);
+echo strtolower($myStr);    // converts the whole string into lower case
 echo "<br><hr>";
-echo strtoupper($myStr);
+echo strtoupper($myStr);    // capitalises the whole string
 echo "<br><hr>";
-echo ucfirst($myStr);
+echo ucfirst($myStr);   // capitalises the first character of the string
 echo "<br><hr>";
-echo ucwords($myStr);
+echo ucwords($myStr);   // capitalise the first character of each word of the string
 echo "<br><hr>";
-echo lcfirst($myStr);
+echo lcfirst($myStr);   // converts the first character of the string only into lower case
 echo "<br><hr>";
-echo strlen($myStr);
+echo strlen($myStr);    // gives the length og the string alongwith mid spaces included in count
 echo "<br><hr>";
-echo str_word_count($myStr);
+echo str_word_count($myStr);    // gives the count of the word given in the string
 echo "<br><hr>";
-print_r(str_word_count($myStr,1));
+print_r(str_word_count($myStr,1));  // gives each word with index values assigned to them starting from 0
 echo "<br><hr>";
-print_r(str_word_count($myStr,2));
+print_r(str_word_count($myStr,2));      // gives each word with their starting index no.
 
 $myMessage = "Ram siya ram jai jai ram siya ram mai to ram hi Ram pukaru";
 echo "<br><hr>";
@@ -155,69 +153,68 @@ echo strtr($myMessage,"abc","xyz");   //case-sensitive, replaces all a to x, b t
 echo "<br><hr>";
 $repArr = ["jai" => "Je","ram"=>"raam","siya"=>"siyaa"];
 echo strtr($myMessage,$repArr);   //case-sensitive, replaces key values of associative array with values in the main string
-*/
 
-// echo strcmp("Hello", "Hello");      // case-sensetive, No different alphabet found in both arguments hence 0
-// echo "<br><hr>";
-// echo strcmp("2Hello", "10Hello");      // first different alphabet encountered is 2 and 1 and  2(50) < 1(49) of str2 hence (50 - 49 = 1)
-// echo "<br><hr>";
-// echo strcmp("Hello", "hello");      // first different alphabet encountered is H and h and  H(72) < h(104) of str2 hence (72-104 = -32)
-// echo "<br><hr>";
-// echo strcmp("Shyam", "Ram");      // first different alphabet encountered is S and R and  S(83) > R(82) of str2 hence (83-82 = 1)
-// echo "<br><hr>";
+echo strcmp("Hello", "Hello");      // case-sensetive, No different alphabet found in both arguments hence 0
+echo "<br><hr>";
+echo strcmp("2Hello", "10Hello");      // first different alphabet encountered is 2 and 1 and  2(50) < 1(49) of str2 hence (50 - 49 = 1)
+echo "<br><hr>";
+echo strcmp("Hello", "hello");      // first different alphabet encountered is H and h and  H(72) < h(104) of str2 hence (72-104 = -32)
+echo "<br><hr>";
+echo strcmp("Shyam", "Ram");      // first different alphabet encountered is S and R and  S(83) > R(82) of str2 hence (83-82 = 1)
+echo "<br><hr>";
 
 // strncmp function compares only first given no. of characters of arguments
 
-// echo strncmp("Congratulations","Congratulations",3);      // case-sensetive, No different alphabet found on first 3 indexes of given strings hence 0
-// echo "<br><hr>";
-// echo strncmp("CongratulAtions","Congratulations",10);      // first different alphabet encountered in first 10 indexe places is A and a on same index place and  A(65) < a(97) of str2 hence (65-97 = -32)
-// echo "<br><hr>";
+echo strncmp("Congratulations","Congratulations",3);      // case-sensetive, No different alphabet found on first 3 indexes of given strings hence 0
+echo "<br><hr>";
+echo strncmp("CongratulAtions","Congratulations",10);      // first different alphabet encountered in first 10 indexe places is A and a on same index place and  A(65) < a(97) of str2 hence (65-97 = -32)
+echo "<br><hr>";
 
 // strncasecmp function is a case insensitive function and compares only first different character's index of string 1 to the same index elemnt of string 2
 
-// echo strcasecmp("ram", "Ram");          // case-insensetive,, No different alphabet found in both arguments hence 0
-// echo "<br><hr>";
-// echo strcasecmp("Hello", "Hello");      // No different alphabet found in both arguments hence 0
-// echo "<br><hr>";
-// echo strcasecmp("Hello", "hel lo");      // first different alphabet encountered is l and space and  l(108) > space(32) of str2 hence (108 - 32 = 76)
-// echo "<br><hr>";
-// echo strcasecmp("HeAlo", "Hello");      // first different alphabet encountered is A and l and  A(97) < l(108) of str2 hence (97-108 == -11)
-// echo "<br><hr>";
-// echo strcasecmp("Hello", "Hello guyz");      // returns -1 because "Hello" is shorter than "Hello guyz", and thus considered "less than" it in a lexicographical comparison.
-// echo "<br><hr>";
-// echo strcasecmp("Hello World", "Hello");      // returns 1 because "Hello World" is larer than "Hello" in length, and thus considered "more than" it in a lexicographical comparison.
-// echo "<br><hr>";
-// echo strcasecmp("2Hello", "10Hello");      // first different alphabet encountered is 2 and 1 and  2(50) < 1(49) of str2 hence (50 - 49 = 1)
-// echo "<br><hr>";
+echo strcasecmp("ram", "Ram");          // case-insensetive,, No different alphabet found in both arguments hence 0
+echo "<br><hr>";
+echo strcasecmp("Hello", "Hello");      // No different alphabet found in both arguments hence 0
+echo "<br><hr>";
+echo strcasecmp("Hello", "hel lo");      // first different alphabet encountered is l and space and  l(108) > space(32) of str2 hence (108 - 32 = 76)
+echo "<br><hr>";
+echo strcasecmp("HeAlo", "Hello");      // first different alphabet encountered is A and l and  A(97) < l(108) of str2 hence (97-108 == -11)
+echo "<br><hr>";
+echo strcasecmp("Hello", "Hello guyz");      // returns -1 because "Hello" is shorter than "Hello guyz", and thus considered "less than" it in a lexicographical comparison.
+echo "<br><hr>";
+echo strcasecmp("Hello World", "Hello");      // returns 1 because "Hello World" is larer than "Hello" in length, and thus considered "more than" it in a lexicographical comparison.
+echo "<br><hr>";
+echo strcasecmp("2Hello", "10Hello");      // first different alphabet encountered is 2 and 1 and  2(50) < 1(49) of str2 hence (50 - 49 = 1)
+echo "<br><hr>";
 
-// echo strncasecmp("Independence", "independence",7);      // case-insensetive, No different alphabet found in first 7 index place alphabets of both argument strings hence 0
-// echo "<br><hr>";
-// echo strncasecmp("Indepandence", "Independence",7);          // first different alphabet encountered in first 7 indexe places of both strings is a and e on same index place and  a(97) < e(101) of str2 hence (97-101 = -4)
-// echo "<br><hr>";
-// echo strncasecmp("Indepandence", "Ind ependence",7);      // first different alphabet encountered is e and space and  e(101) > space(32) of str2 hence (101 - 32 = 69)
-// echo "<br><hr>";
-// echo strncasecmp("2Indepandence", "10Independence",7);      // first different alphabet encountered is 2 and 1 and  2(50) < 1(49) of str2 hence (50 - 49 = 1)
-// echo "<br><hr>";
+echo strncasecmp("Independence", "independence",7);      // case-insensetive, No different alphabet found in first 7 index place alphabets of both argument strings hence 0
+echo "<br><hr>";
+echo strncasecmp("Indepandence", "Independence",7);          // first different alphabet encountered in first 7 indexe places of both strings is a and e on same index place and  a(97) < e(101) of str2 hence (97-101 = -4)
+echo "<br><hr>";
+echo strncasecmp("Indepandence", "Ind ependence",7);      // first different alphabet encountered is e and space and  e(101) > space(32) of str2 hence (101 - 32 = 69)
+echo "<br><hr>";
+echo strncasecmp("2Indepandence", "10Independence",7);      // first different alphabet encountered is 2 and 1 and  2(50) < 1(49) of str2 hence (50 - 49 = 1)
+echo "<br><hr>";
 
-// echo strnatcmp("Independence", "Independence");      // case-sensetive, No different alphabet found in both argument strings hence 0
-// echo "<br><hr>";
-// echo strnatcmp("Independense", "Indepandence");      // case-sensetive, first different alphabet encountered in both strings is s and c and  human puts s after c in dictionary so right value of scale ( from -1,0,1 ) is assigned i.e 1
-// echo "<br><hr>";
-// echo strnatcmp("Indepandence", "Independence");          // first different alphabet encountered in both strings is a and e on same index place and human puts a before e in dictionary so left value of scale ( from -1,0,1 ) is assigned i.e -1
-// echo "<br><hr>";
-// echo strnatcmp("2Indepiandence10", "2Indepe5ndence5");      // will return 1, since "i" is lexicographically greater than "5", the first string is considered greater than the second.
-// echo "<br><hr>";
-// echo strnatcmp("2Indepandence", "10Independence");      // returns -1 because "2" is less than "10", indicating that "2Indepandence" is less than "10Independence" in natural order comparison.
-// echo "<br><hr>";
+echo strnatcmp("Independence", "Independence");      // case-sensetive, No different alphabet found in both argument strings hence 0
+echo "<br><hr>";
+echo strnatcmp("Independense", "Indepandence");      // case-sensetive, first different alphabet encountered in both strings is s and c and  human puts s after c in dictionary so right value of scale ( from -1,0,1 ) is assigned i.e 1
+echo "<br><hr>";
+echo strnatcmp("Indepandence", "Independence");          // first different alphabet encountered in both strings is a and e on same index place and human puts a before e in dictionary so left value of scale ( from -1,0,1 ) is assigned i.e -1
+echo "<br><hr>";
+echo strnatcmp("2Indepiandence10", "2Indepe5ndence5");      // will return 1, since "i" is lexicographically greater than "5", the first string is considered greater than the second.
+echo "<br><hr>";
+echo strnatcmp("2Indepandence", "10Independence");      // returns -1 because "2" is less than "10", indicating that "2Indepandence" is less than "10Independence" in natural order comparison.
+echo "<br><hr>";
 
-// echo strnatcasecmp("Independence", "independence");      // case-insensetive, No different alphabet found in both argument strings hence 0
-// echo "<br><hr>";
-// echo strnatcasecmp("Indepandence", "Independence");          // first different alphabet encountered in both strings is a and e on same index place and human puts a before e in dictionary so left value of scale ( from -1,0,1 ) is assigned i.e -1
-// echo "<br><hr>";
-// echo strnatcasecmp("2Indepiandence10", "2Indepe5ndence5");      // due to the numerical comparison of 10 and 5, strnatcasecmp will return a positive value i.e 1
-// echo "<br><hr>";
-// echo strnatcasecmp("2Indepandence", "10Independence");      // returns -1 because "2" is less than "10", indicating that "2Indepandence" is less than "10Independence" in natural order comparison.
-// echo "<br><hr>";
+echo strnatcasecmp("Independence", "independence");      // case-insensetive, No different alphabet found in both argument strings hence 0
+echo "<br><hr>";
+echo strnatcasecmp("Indepandence", "Independence");          // first different alphabet encountered in both strings is a and e on same index place and human puts a before e in dictionary so left value of scale ( from -1,0,1 ) is assigned i.e -1
+echo "<br><hr>";
+echo strnatcasecmp("2Indepiandence10", "2Indepe5ndence5");      // due to the numerical comparison of 10 and 5, strnatcasecmp will return a positive value i.e 1
+echo "<br><hr>";
+echo strnatcasecmp("2Indepandence", "10Independence");      // returns -1 because "2" is less than "10", indicating that "2Indepandence" is less than "10Independence" in natural order comparison.
+echo "<br><hr>";
 
 /*
 
@@ -314,7 +311,7 @@ echo "<br><hr><br>";
 $myWordWrappedMsg1 = wordwrap($myNormalStr,2,"<br>",TRUE);    // True argument affects output and BREAK tag will get applied after given number of character
 echo $myWordWrappedMsg1;
 
-*/
+
 /*
 
 echo "<br><hr>";
@@ -401,8 +398,9 @@ print_r (get_html_translation_table(HTML_ENTITIES));
 
 */
 
+/*
 echo "<br><hr><br>";
-print_r(md5("Raja"));       // converts Raja into 32 bit hex code
+print_r(md5("Raja"));       // converts Raja into 16 bit binary code
 echo "<br><hr><br>";
 print_r(md5("Raja", FALSE));       // converts Raja into 32 bit hex code
 echo "<br><hr><br>";
@@ -473,4 +471,10 @@ echo "<br><hr><br>";
 echo "The Type of chr function output is : ";
 var_dump($AsciiToStringVal2)."<br>";
 
+$binaryOffHex = hex2bin("b9d7417ffa1db351d5f011aa055dd4045ceae54a");
+print("<br> $binaryOffHex");
+
+$HexyOffBin = bin2hex($binaryOffHex);
+print("<br> $HexyOffBin");
+*/
 ?>

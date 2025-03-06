@@ -51,7 +51,7 @@ echo "<br>";
 
 // switch-case statement
 
-$country = "indin"; // we can try with canada, france, morocco, brazil
+$country = "india"; // we can try with canada, france, morocco, brazil
 
 switch($country){
     case "india":

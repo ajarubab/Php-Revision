@@ -37,7 +37,7 @@ echo "<br>";
 
 for($a =0; $a<10; $a++){
     if($a == 5){
-        goto jumppoint;
+        goto jumpPoint;
     }
 }
 
@@ -46,7 +46,7 @@ echo "This is echo statement 2";
 echo "This is echo statement 3";
 echo "This is echo statement 4";
 
-jumppoint:
+jumpPoint:
 
 echo "This is echo statement 5";
 

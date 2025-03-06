@@ -9,10 +9,17 @@
     // Indexed Array
 
     $arr1 = array('siya',"ram",23, true, null, 56.43);
+
+    echo "<pre>";
+    print_r($arr1);
     
-    for($i=0; $i < count($arr1); $i++){
-        echo $arr1[$i]."<br>";
-    }
+    // for($i=0; $i < count($arr1); $i++){
+    //     echo $arr1[$i]."<br>";
+    // }
+
+    // foreach($arr1 as $x){
+    //     print("$x <br>");
+    // }
     
     echo "<br>";
     echo "<hr>";
@@ -22,8 +29,13 @@
 
     $arr2 = [34,null, 'radhe', false, 11.22, "krishna"];
     $arr2 = array_merge($arr1,$arr2);
+
     echo "<pre>";
     print_r($arr2);
+    
+    // foreach($arr2 as $x){
+    //     print("$x <br>");
+    // }
 
     echo "<br>";
     echo "<hr>";
